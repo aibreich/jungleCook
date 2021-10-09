@@ -1,0 +1,107 @@
+// heres the footer code
+footer {
+  position: fixed;
+  bottom: 25px;
+  right: 50px;
+  width: 90%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  //   this is the copyright label they had in the bottom left of the site
+  .copyright {
+    position: fixed;
+    bottom: 27px;
+    left: 50px;
+    width: 300px;
+    font-family: lato-light-italic;
+    color: black;
+    font-size: 17px;
+  }
+  //   the quick access foot nav with some of the recipe tags out of it for now since the user is not logged in
+  .foot-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 500px;
+    position: fixed;
+    bottom: 27px;
+    right: 550px;
+
+    // The styling for the a tags
+    a {
+      text-decoration: none;
+      font-family: lato-light-italic;
+      color: black;
+      font-size: 18px;
+    }
+  }
+  //   these are the social media logos that are positioned in the bottom right
+  .fb-logo {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/facebook.svg);
+    position: fixed;
+    bottom: 25px;
+    right: 150px;
+  }
+  .insta-logo {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/instagram.svg);
+    position: fixed;
+    bottom: 25px;
+    right: 75px;
+  }
+}
+
+// The media scaling for each device changing the sizes of everything to keep the same look and clear ability to read
+@media only screen and (max-width: 768px) {
+  footer {
+    .copyright {
+      font-size: 14;
+      bottom: 75px;
+      left: 50px;
+    }
+    .foot-nav {
+      width: 450px;
+      left: 25px;
+      a {
+        font-size: 14;
+      }
+    }
+    .fb-logo {
+    }
+    .insta-logo {
+    }
+  }
+}
+
+@media only screen and (max-width: 378px) {
+  footer {
+    .copyright {
+      width: 180px;
+      font-size: 12px;
+      bottom: 60px;
+      left: 25px;
+    }
+    .foot-nav {
+      width: 250px;
+      left: 25px;
+      a {
+        font-size: 12px;
+      }
+    }
+    .fb-logo {
+      width: 12px;
+      height: 12px;
+      right: 50px;
+    }
+    .insta-logo {
+      width: 12px;
+      height: 12px;
+      right: 25px;
+    }
+  }
+}
