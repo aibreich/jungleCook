@@ -1,13 +1,14 @@
 // heres the footer code
 footer {
-  position: fixed;
+  position: relative;
   bottom: 25px;
-  right: 50px;
+  left: 50px;
   width: 90%;
-  height: 100px;
+
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  z-index: 1;
 
   //   this is the copyright label they had in the bottom left of the site
   .copyright {
@@ -27,7 +28,7 @@ footer {
     width: 500px;
     position: fixed;
     bottom: 27px;
-    right: 550px;
+    right: 450px;
 
     // The styling for the a tags
     a {

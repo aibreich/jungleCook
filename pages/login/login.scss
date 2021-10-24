@@ -1,0 +1,136 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  background-color: $site-yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .login-holder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+
+    .login-section {
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+
+      h1 {
+        margin-top: 70px;
+        font-family: lato-light;
+        font-size: 26px;
+        margin: 25px;
+        position: relative;
+        right: 17px;
+      }
+      .inputSign {
+        max-width: 500px;
+        border: none;
+        border-bottom: 2px black solid;
+        background-color: $site-yellow;
+        font-size: 15px;
+        color: black;
+        font-family: lato-light;
+        padding: 5px;
+        margin: 10px;
+      }
+      .btn {
+        border: none;
+        border-radius: 25px;
+        background-color: #ffd972;
+        width: 140px;
+        height: 40px;
+        box-shadow: 0px 5px 10px grey;
+
+        span {
+          width: 50px;
+          height: 20px;
+          position: absolute;
+          margin-top: -15px;
+          margin-left: -24px;
+          font-size: 24px;
+          font-family: caveat-reg;
+          color: black;
+          text-transform: capitalize;
+        }
+      }
+    }
+    .sign-up {
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      //   justify-content: space-evenly;
+
+      p {
+        font-family: lato-light-italic;
+        margin: 25px;
+        position: relative;
+        font-size: 14px;
+        top: 50px;
+        right: 18px;
+      }
+      h1 {
+        font-family: lato-light;
+        margin: 25px;
+        font-size: 26px;
+        position: relative;
+        right: 34px;
+      }
+      .input-sign {
+        max-width: 500px;
+        border: none;
+        border-bottom: 2px black solid;
+        background-color: $site-yellow;
+        font-size: 15px;
+        color: black;
+        font-family: lato-light;
+        padding: 5px;
+        margin: 10px;
+      }
+      .btn {
+        border: none;
+        border-radius: 25px;
+        background-color: #ffd972;
+        width: 140px;
+        height: 40px;
+        box-shadow: 0px 5px 10px grey;
+
+        span {
+          width: 70px;
+          height: 20px;
+          position: absolute;
+          margin-top: -17px;
+          margin-left: -38px;
+          font-size: 24px;
+          font-family: caveat-reg;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .login {
+    .login-holder {
+      flex-direction: column;
+      .login-section {
+      }
+    }
+  }
+}
+@media only screen and (max-width: 378px) {
+  .login {
+    height: 1000px;
+    .login-holder {
+      flex-direction: column;
+    }
+  }
+}
