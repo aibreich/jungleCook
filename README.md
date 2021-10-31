@@ -1,5 +1,5 @@
 # jungleCook
 
-### This is my attempt at recreating the login page. I was unable to get my footer to work with the height changing when its on smaller screens. 
+### I was unable to get the firebase to fully work but worked around that and got my webpages to change when the user logged in and out
 
-### https://in-info-web4.informatics.iupui.edu/~aibreich/jungleCook/
+### https://jcooklogin.web.app/

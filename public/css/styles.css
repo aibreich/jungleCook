@@ -161,6 +161,11 @@ p {
     font-family: caveat-reg;
     color: black;
     font-size: 24px; }
+  .link-nav .pLink {
+    text-decoration: none;
+    font-family: caveat-reg;
+    color: black;
+    font-size: 24px; }
   .link-nav span {
     border-radius: 25px;
     background-color: #ffd972;
@@ -178,9 +183,12 @@ p {
     border: none;
     border-radius: 25px;
     background-color: #ffd972;
-    width: 140px;
-    height: 40px;
-    box-shadow: 0px 5px 10px grey; }
+    width: 115px;
+    height: 50px;
+    box-shadow: 0px 5px 10px grey;
+    font-family: caveat-reg;
+    color: black;
+    font-size: 22px; }
 
 nav {
   display: none;
@@ -210,7 +218,6 @@ nav {
     flex-direction: column;
     align-items: center;
     transform: translateX(100%);
-    transition: transform 0.7s ease-in;
     background-color: rgba(99, 94, 94, 0.9);
     z-index: 3; }
     .link-nav a {
@@ -247,7 +254,6 @@ nav {
     flex-direction: column;
     align-items: center;
     transform: translateX(100%);
-    transition: transform 0.7s ease-in;
     background-color: rgba(99, 94, 94, 0.9);
     z-index: 3; }
     .link-nav a {
@@ -272,14 +278,14 @@ nav {
     display: flex; } }
 
 footer {
-  position: relative;
+  position: absolute;
   bottom: 25px;
   left: 50px;
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  z-index: 1; }
+  z-index: 3; }
   footer .copyright {
     position: fixed;
     bottom: 27px;
@@ -301,6 +307,11 @@ footer {
       font-family: lato-light-italic;
       color: black;
       font-size: 18px; }
+    footer .foot-nav .pLink {
+      text-decoration: none;
+      font-family: caveat-reg;
+      color: black;
+      font-size: 24px; }
   footer .fb-logo {
     width: 24px;
     height: 24px;
@@ -450,4 +461,29 @@ footer {
   .login {
     height: 1000px; }
     .login .login-holder {
-      flex-direction: column; } }
+      flex-direction: column; }
+    .login .loginfoot .copyright {
+      position: absolute;
+      width: 180px;
+      font-size: 12px;
+      bottom: -300px;
+      left: -25px; }
+    .login .loginfoot .foot-nav {
+      position: absolute;
+      width: 250px;
+      left: -27px;
+      bottom: -330px; }
+      .login .loginfoot .foot-nav a {
+        font-size: 12px; }
+    .login .loginfoot .fb-logo {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      right: 60px;
+      bottom: -330px; }
+    .login .loginfoot .insta-logo {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      right: 35px;
+      bottom: -330px; } }

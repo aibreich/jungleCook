@@ -1,12 +1,29 @@
+const navMove = () => {
+    const burger = document.querySelector(".fas")
+    const nav = document.querySelector(".link-nav")
+    const navLink = document.querySelector('.link-nav a')
+
+    // the listener on the burger menu
+    burger.addEventListener('click', () => {
+        // using the nav-active to move the nav over
+        nav.classList.toggle('nav-active');
+    });
+    
+};
+navMove();
 function initFirebase() {
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
             // var displayName = user.displayName;
             console.log("connected")
-            $(".pName").css("display", "block")
+            $(".pName").css("display", "block");
+            $(".pLink").css("display", "block");
+            $(".pLog").css("display", "none");
         } else {
             console.log("user is not there");
-            $(".pName").css("display", "none")
+            $(".pName").css("display", "none");
+            $(".pLink").css("display", "none");
+            $(".pLog").css("display", "block");
         }
     })
     // firebase
@@ -18,7 +35,7 @@ function initFirebase() {
     // .catch((error) => {
     //     var errorCode = error.code;
     //     var errorMessage = error.message;
-    //     _db = [];
+    //     _db = []; 
     // });
 }
 function createUser() {
@@ -76,38 +93,50 @@ function signout() {
       });
 }
 
-function initListener() {
-    $(".btn").click(function(e){
+// function initListener() {
+//     $(".btn").click(function(e){
+//         console.log("clicked")
+//         e.preventDefault();
+//         let btnID = e.currentTarget.id;
+//         if(btnID == "create"){
+//             createUser();
+//         }else if(btnID == "login"){
+//             login();
+//         }else if(btnID == "signout"){
+//             signout();
+//         }
+//     })
+// }
+function removeNav(page){
+    $('a').click(function(){
         console.log("clicked")
-        e.preventDefault();
-        let btnID = e.currentTarget.id;
-        if(btnID == "create"){
-            createUser();
-        }else if(btnID == "login"){
-            login();
-        }else if(btnID == "signout"){
-            signout();
-        }
-    })
+        $('.link-nav').removeClass('nav-active');
+    });
 }
+
 function route() {
     let hashTag = window.location.hash;
     let pageID = hashTag.replace("#/", "");
 
     if (pageID == "") {
-        model.placholder("home")
+        model.placholder("home");
+        console.log("Grabbing:" + pageID);
     } else {
-        model.placholder(pageID)
+        model.placholder(pageID);
+        console.log("Grabbing:" + pageID);
     }
+    
+    removeNav(pageID);
 }
 
 function initListeners(){
     $(window).on("hashchange", route);
     route();
+    
 }
 
 $(document).ready(function(){
-    initListener();
+    
     try {
         let app = firebase.app();
         initFirebase();
@@ -121,15 +150,5 @@ $(document).ready(function(){
     model.placholder("home")
 }) 
 
-// this is my function to set up each of the var
-const navMove = () => {
-    const burger = document.querySelector(".fas")
-    const nav = document.querySelector(".link-nav")
-    // the listener on the burger menu
-    burger.addEventListener('click', () => {
-        // using the nav-active to move the nav over
-        nav.classList.toggle('nav-active');
-    });
-};
 
-navMove();
+

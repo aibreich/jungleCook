@@ -1,6 +1,6 @@
 // heres the footer code
 footer {
-  position: relative;
+  position: absolute;
   bottom: 25px;
   left: 50px;
   width: 90%;
@@ -8,7 +8,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  z-index: 1;
+  z-index: 3;
 
   //   this is the copyright label they had in the bottom left of the site
   .copyright {
@@ -36,6 +36,12 @@ footer {
       font-family: lato-light-italic;
       color: black;
       font-size: 18px;
+    }
+    .pLink {
+      text-decoration: none;
+      font-family: caveat-reg;
+      color: black;
+      font-size: 24px;
     }
   }
   //   these are the social media logos that are positioned in the bottom right
