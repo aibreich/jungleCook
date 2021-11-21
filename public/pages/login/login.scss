@@ -127,35 +127,37 @@
       flex-direction: column;
     }
     .loginfoot {
+      bottom: -300px;
+      // margin-top: 30px;
       .copyright {
-        position: absolute;
-        width: 180px;
-        font-size: 12px;
-        bottom: -300px;
-        left: -25px;
+        // position: absolute;
+        // width: 180px;
+        // font-size: 12px;
+        // bottom: -300px;
+        // left: -25px;
       }
       .foot-nav {
-        position: absolute;
-        width: 250px;
-        left: -27px;
-        bottom: -330px;
+        // position: absolute;
+        // width: 250px;
+        // left: -27px;
+        // bottom: -330px;
         a {
           font-size: 12px;
         }
       }
       .fb-logo {
-        position: absolute;
-        width: 12px;
-        height: 12px;
-        right: 60px;
-        bottom: -330px;
+        // position: absolute;
+        // width: 12px;
+        // height: 12px;
+        // right: 60px;
+        // bottom: -330px;
       }
       .insta-logo {
-        position: absolute;
-        width: 12px;
-        height: 12px;
-        right: 35px;
-        bottom: -330px;
+        // position: absolute;
+        // width: 12px;
+        // height: 12px;
+        // right: 35px;
+        // bottom: -330px;
       }
     }
   }

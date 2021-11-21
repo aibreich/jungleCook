@@ -1,0 +1,44 @@
+<section class="create">
+    <h1>Hey Michael, Create your Recipe</h1>
+    <section class="recipestuff">
+            <input class="recipeimg" name="recipeimg" id="recipeimg" type="image" placeholder="Add Recipe Image" required><br/>
+            <input class="recipe" name="recipeName" id="recipeName" type="text" placeholder="Recipe Name" required><br/>
+            <input class="recipe" name="recipeDesc" id="recipeDesc" type="text" placeholder="Recipe Description" required><br/>
+            <input class="recipe" name="recipeTime" id="recipeTime" type="text" placeholder="Recipe Total Time" required><br/>
+            <input class="recipe" name="recipeServe" id="recipeServe" type="text" placeholder="Recipe Serving size" required><br/>
+    </section>
+    <p>Enter Ingredients</p>
+    <div class="form">
+        <input id="ind1" type="text" placeholder="Ingredient #1">
+        <input id="ind2" type="text" placeholder="Ingredient #2">
+        <input id="ind3" type="text" placeholder="Ingredient #3">
+        <div class="btn" onclick="addIngredient(event)">
+          +
+        </div>
+      </div>
+      <p>Enter Instructions</p>
+      <div class="form2">
+        <input id="ins1" type="text" placeholder="Instruction #1">
+        <input id="ins2" type="text" placeholder="Instruction #2">
+        <input id="ins3" type="text" placeholder="Instruction #3">
+        <div class="btn" onclick="addInstruction(event)">
+          +
+        </div>
+      </div>
+      <input type="submit" class="cRecipe"  onclick="createRecipe()" value="Create Recipe"> 
+        </input>
+
+      <footer>
+    <div class="copyright">
+        Copyright © 2019 The Jungle Cook
+    </div>
+
+    <div class="foot-nav">
+        <a href="#/browse">Recipes by Categories</a>
+        <a href="#/">Privacy and Copyright</a>
+        <a href="#/yourrecipe" class="pLinkn">Your Recipes</a>
+    </div>
+    <div class="fb-logo"></div>
+    <div class="insta-logo"></div>
+</footer>
+</section>

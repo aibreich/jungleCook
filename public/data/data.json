@@ -1,0 +1,60 @@
+{
+  "PUBLIC_RECIPES": [
+    {
+      "recipeName": "supreme pizza",
+      "recipeDesc": "Make pizza night super duper out of this world with homemade pizza. This recipe is supreme with vegetables and two types of meat. Yum!",
+      "ingred1": "1/4 batch pizza dough",
+      "ingred2": "2 tablespoons Last-Minute Pizza Sauce",
+      "ingred3": "10 slices pepperoni",
+      "ingred4": "1 cup cooked and crumbled Italian sausage",
+      "ingred5": "2 large mushrooms, sliced",
+      "ingred6": "1/4 bell pepper, sliced",
+      "ingred7": "1 tablespoon sliced black olives",
+      "ingred8": "1 cup shredded mozzarella cheese",
+
+      "instr1": "1. Preheat the oven to 475°. Spray pizza pan with nonstick cooking or line a baking sheet with parchment paper.",
+      "instr2": "2. Flatten dough into a thin round and place on the pizza pan.",
+      "instr3": "3. Spread pizza sauce over the dough.",
+      "instr4": "4. Layer the toppings over the dough in the order listed .",
+      "instr5": "5. Bake for 8 to 10 minutes or until the crust is crisp and the cheese melted and lightly browned."
+    },
+    {
+      "recipeName": "Hamburger"
+    },
+    {
+      "recipeName": "Chicken pot pie"
+    },
+    {
+      "recipeName": "Chicken tendies"
+    }
+  ],
+  "USER_RECIPES": [
+    {
+      "recipeName": "supreme pizza",
+      "recipeDesc": "Make pizza night super duper out of this world with homemade pizza. This recipe is supreme with vegetables and two types of meat. Yum!",
+      "ingred1": "1/4 batch pizza dough",
+      "ingred2": "2 tablespoons Last-Minute Pizza Sauce",
+      "ingred3": "10 slices pepperoni",
+      "ingred4": "1 cup cooked and crumbled Italian sausage",
+      "ingred5": "2 large mushrooms, sliced",
+      "ingred6": "1/4 bell pepper, sliced",
+      "ingred7": "1 tablespoon sliced black olives",
+      "ingred8": "1 cup shredded mozzarella cheese",
+
+      "instr1": "1. Preheat the oven to 475°. Spray pizza pan with nonstick cooking or line a baking sheet with parchment paper.",
+      "instr2": "2. Flatten dough into a thin round and place on the pizza pan.",
+      "instr3": "3. Spread pizza sauce over the dough.",
+      "instr4": "4. Layer the toppings over the dough in the order listed .",
+      "instr5": "5. Bake for 8 to 10 minutes or until the crust is crisp and the cheese melted and lightly browned."
+    },
+    {
+      "recipeName": "Krabby Patty"
+    },
+    {
+      "recipeName": "Chicken nuggies"
+    },
+    {
+      "recipeName": "Chicken & waffles"
+    }
+  ]
+}

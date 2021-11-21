@@ -1,21 +1,21 @@
 // heres the footer code
 footer {
   position: absolute;
-  bottom: 25px;
+  bottom: 15px;
   left: 50px;
   width: 90%;
 
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  z-index: 3;
+  z-index: 2;
 
   //   this is the copyright label they had in the bottom left of the site
   .copyright {
-    position: fixed;
-    bottom: 27px;
-    left: 50px;
-    width: 300px;
+    position: relative;
+    bottom: -2px;
+    // left: 50px;
+    width: 270px;
     font-family: lato-light-italic;
     color: black;
     font-size: 17px;
@@ -25,10 +25,10 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 500px;
-    position: fixed;
-    bottom: 27px;
-    right: 450px;
+    width: 600px;
+    position: relative;
+    bottom: -2px;
+    // left: 20px;
 
     // The styling for the a tags
     a {
@@ -41,7 +41,7 @@ footer {
       text-decoration: none;
       font-family: caveat-reg;
       color: black;
-      font-size: 24px;
+      font-size: 18px;
     }
   }
   //   these are the social media logos that are positioned in the bottom right
@@ -49,36 +49,40 @@ footer {
     width: 24px;
     height: 24px;
     background-image: url(../images/facebook.svg);
-    position: fixed;
-    bottom: 25px;
-    right: 150px;
+    position: relative;
+    // bottom: 25px;
+    left: 25px;
+    background-repeat: no-repeat;
   }
   .insta-logo {
     width: 24px;
     height: 24px;
     background-image: url(../images/instagram.svg);
-    position: fixed;
-    bottom: 25px;
-    right: 75px;
+    position: relative;
+    background-repeat: no-repeat;
+    // bottom: 25px;
+    // left: 25px;
   }
 }
 
 // The media scaling for each device changing the sizes of everything to keep the same look and clear ability to read
 @media only screen and (max-width: 768px) {
   footer {
+    left: 30px;
     .copyright {
-      font-size: 14;
-      bottom: 75px;
-      left: 50px;
+      font-size: 14px;
+      bottom: 30px;
+      left: 25px;
     }
     .foot-nav {
-      width: 450px;
-      left: 25px;
+      width: 615px;
+      right: 185px;
       a {
-        font-size: 14;
+        font-size: 14px;
       }
     }
     .fb-logo {
+      left: -25px;
     }
     .insta-logo {
     }
@@ -87,28 +91,33 @@ footer {
 
 @media only screen and (max-width: 378px) {
   footer {
+    left: 20px;
     .copyright {
-      width: 180px;
-      font-size: 12px;
-      bottom: 60px;
-      left: 25px;
+      // width: 200px;
+      font-size: 11px;
+      bottom: 25px;
+      // left: 25px;
     }
     .foot-nav {
-      width: 250px;
-      left: 25px;
+      width: 360px;
+      height: 70px;
+      // bottom: 15px;
+      right: 50px;
       a {
-        font-size: 12px;
+        font-size: 11px;
       }
     }
     .fb-logo {
-      width: 12px;
-      height: 12px;
-      right: 50px;
+      width: 15px;
+      height: 15px;
+      left: -10px;
+      bottom: 32px;
     }
     .insta-logo {
-      width: 12px;
-      height: 12px;
-      right: 25px;
+      width: 15px;
+      height: 15px;
+      // right: -315px;
+      bottom: 32px;
     }
   }
 }

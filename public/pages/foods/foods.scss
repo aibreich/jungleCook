@@ -1,0 +1,142 @@
+.foods {
+  width: 100%;
+  height: 150%;
+  position: absolute;
+
+  .top-half {
+    width: 70%;
+    height: 400px;
+    position: relative;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-evenly;
+    margin-bottom: 45px;
+    top: 110px;
+    left: 90px;
+    .img-box {
+      float: left;
+      width: 400px;
+      top: -50px;
+
+      h1 {
+        font-family: lato-light-italic;
+        position: relative;
+        left: -80px;
+        top: 65px;
+        // float: top;
+        height: 40px;
+        width: 300px;
+        transform: rotate(-90deg);
+      }
+      .food-img {
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        float: right;
+        position: relative;
+        // left: -80px;
+        top: -55px;
+      }
+    }
+
+    .text-cont {
+      width: 400px;
+      height: 300px;
+      float: right;
+
+      h2 {
+        font-family: lato-light;
+      }
+      p {
+        font-family: lato-light;
+      }
+      h3 {
+        font-family: lato-light;
+      }
+      p {
+        font-family: lato-light;
+      }
+    }
+  }
+
+  .ingredients {
+    width: 75%;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+    h2 {
+      font-family: lato-light;
+    }
+    p {
+      font-family: lato-light;
+    }
+  }
+  .instructions {
+    width: 75%;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    h2 {
+      font-family: lato-light;
+    }
+    p {
+      font-family: lato-light;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .foods {
+    height: 140%;
+    .top-half {
+      .text-cont {
+        position: relative;
+        right: 80px;
+        margin-bottom: 80px;
+      }
+    }
+    .ingredients {
+      left: 50px;
+    }
+    .instructions {
+      left: -10px;
+      width: 60%;
+    }
+  }
+}
+@media only screen and (max-width: 378px) {
+  .foods {
+    height: 225%;
+    .top-half {
+      left: 0px;
+      .img-box {
+        float: left;
+        width: 400px;
+        top: -50px;
+
+        h1 {
+          // left: -100px;
+          top: 15px;
+        }
+        .food-img {
+          width: 180px;
+          height: 180px;
+          left: -120px;
+        }
+      }
+      .text-cont {
+        width: 280px;
+        position: relative;
+        left: 80px;
+        margin-bottom: 100px;
+      }
+    }
+    .ingredients {
+      left: 14px;
+    }
+    .instructions {
+      // left: -10px;
+      // width: 60%;
+    }
+  }
+}

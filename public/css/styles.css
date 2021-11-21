@@ -136,7 +136,7 @@ p {
 
 .logo {
   background-image: url(../images/logo.svg);
-  position: fixed;
+  position: absolute;
   top: 25px;
   left: 50px;
   width: 189px;
@@ -149,7 +149,7 @@ p {
 .link-nav {
   width: 680px;
   height: 50px;
-  position: fixed;
+  position: absolute;
   top: 25px;
   right: 50px;
   display: flex;
@@ -161,7 +161,7 @@ p {
     font-family: caveat-reg;
     color: black;
     font-size: 24px; }
-  .link-nav .pLink {
+  .link-nav .pLinkn {
     text-decoration: none;
     font-family: caveat-reg;
     color: black;
@@ -192,7 +192,7 @@ p {
 
 nav {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 25px;
   right: 50px;
   width: 50px;
@@ -279,18 +279,17 @@ nav {
 
 footer {
   position: absolute;
-  bottom: 25px;
+  bottom: 15px;
   left: 50px;
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  z-index: 3; }
+  z-index: 2; }
   footer .copyright {
-    position: fixed;
-    bottom: 27px;
-    left: 50px;
-    width: 300px;
+    position: relative;
+    bottom: -2px;
+    width: 270px;
     font-family: lato-light-italic;
     color: black;
     font-size: 17px; }
@@ -298,10 +297,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 500px;
-    position: fixed;
-    bottom: 27px;
-    right: 450px; }
+    width: 600px;
+    position: relative;
+    bottom: -2px; }
     footer .foot-nav a {
       text-decoration: none;
       font-family: lato-light-italic;
@@ -311,52 +309,57 @@ footer {
       text-decoration: none;
       font-family: caveat-reg;
       color: black;
-      font-size: 24px; }
+      font-size: 18px; }
   footer .fb-logo {
     width: 24px;
     height: 24px;
     background-image: url(../images/facebook.svg);
-    position: fixed;
-    bottom: 25px;
-    right: 150px; }
+    position: relative;
+    left: 25px;
+    background-repeat: no-repeat; }
   footer .insta-logo {
     width: 24px;
     height: 24px;
     background-image: url(../images/instagram.svg);
-    position: fixed;
-    bottom: 25px;
-    right: 75px; }
+    position: relative;
+    background-repeat: no-repeat; }
 
 @media only screen and (max-width: 768px) {
-  footer .copyright {
-    font-size: 14;
-    bottom: 75px;
-    left: 50px; }
-  footer .foot-nav {
-    width: 450px;
-    left: 25px; }
-    footer .foot-nav a {
-      font-size: 14; } }
+  footer {
+    left: 30px; }
+    footer .copyright {
+      font-size: 14px;
+      bottom: 30px;
+      left: 25px; }
+    footer .foot-nav {
+      width: 615px;
+      right: 185px; }
+      footer .foot-nav a {
+        font-size: 14px; }
+    footer .fb-logo {
+      left: -25px; } }
 
 @media only screen and (max-width: 378px) {
-  footer .copyright {
-    width: 180px;
-    font-size: 12px;
-    bottom: 60px;
-    left: 25px; }
-  footer .foot-nav {
-    width: 250px;
-    left: 25px; }
-    footer .foot-nav a {
-      font-size: 12px; }
-  footer .fb-logo {
-    width: 12px;
-    height: 12px;
-    right: 50px; }
-  footer .insta-logo {
-    width: 12px;
-    height: 12px;
-    right: 25px; } }
+  footer {
+    left: 20px; }
+    footer .copyright {
+      font-size: 11px;
+      bottom: 25px; }
+    footer .foot-nav {
+      width: 360px;
+      height: 70px;
+      right: 50px; }
+      footer .foot-nav a {
+        font-size: 11px; }
+    footer .fb-logo {
+      width: 15px;
+      height: 15px;
+      left: -10px;
+      bottom: 32px; }
+    footer .insta-logo {
+      width: 15px;
+      height: 15px;
+      bottom: 32px; } }
 
 .login {
   width: 100%;
@@ -462,28 +465,345 @@ footer {
     height: 1000px; }
     .login .login-holder {
       flex-direction: column; }
-    .login .loginfoot .copyright {
-      position: absolute;
-      width: 180px;
-      font-size: 12px;
-      bottom: -300px;
-      left: -25px; }
-    .login .loginfoot .foot-nav {
-      position: absolute;
-      width: 250px;
-      left: -27px;
-      bottom: -330px; }
+    .login .loginfoot {
+      bottom: -300px; }
       .login .loginfoot .foot-nav a {
-        font-size: 12px; }
-    .login .loginfoot .fb-logo {
+        font-size: 12px; } }
+
+.create {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute; }
+  .create h1 {
+    position: relative;
+    top: 95px; }
+  .create .recipestuff {
+    width: 80%;
+    position: relative;
+    margin-top: 130px; }
+    .create .recipestuff .recipe {
+      height: 40px;
+      width: 100%;
+      margin-top: 20px; }
+  .create p {
+    margin-top: 10px; }
+  .create .form {
+    width: 80%;
+    position: relative; }
+    .create .form input {
+      height: 40px;
+      width: 100%;
+      margin-top: 20px; }
+    .create .form .btn {
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: white;
+      background-color: #efa7a7;
+      cursor: pointer;
       position: absolute;
-      width: 12px;
-      height: 12px;
-      right: 60px;
-      bottom: -330px; }
-    .login .loginfoot .insta-logo {
+      bottom: -5px;
+      right: 0; }
+  .create .form2 {
+    width: 80%;
+    position: relative; }
+    .create .form2 input {
+      height: 40px;
+      width: 100%;
+      margin-top: 20px; }
+    .create .form2 .btn {
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: white;
+      background-color: #efa7a7;
+      cursor: pointer;
       position: absolute;
-      width: 12px;
-      height: 12px;
-      right: 35px;
-      bottom: -330px; } }
+      bottom: -5px;
+      right: 0; }
+  .create .cRecipe {
+    border: none;
+    border-radius: 35px;
+    background-color: #efa7a7;
+    width: 340px;
+    height: 50px;
+    box-shadow: 0px 5px 10px grey;
+    font-size: 24px;
+    font-family: caveat-reg;
+    color: black;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-bottom: 125px; }
+
+.browse {
+  width: 100%;
+  height: 110%;
+  background-image: linear-gradient(to right, rgba(167, 232, 189, 0.6), rgba(167, 232, 189, 0.6)), url(../images/recipe-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute; }
+  .browse h1 {
+    font-family: lato-light-italic;
+    position: relative;
+    left: 100px;
+    top: 90px; }
+  .browse .browse-cont {
+    width: 80%;
+    height: 300px;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+    .browse .browse-cont .recipe {
+      width: 530px;
+      height: 270px; }
+      .browse .browse-cont .recipe .hotdog {
+        text-decoration: none;
+        text-decoration-color: black;
+        color: black; }
+      .browse .browse-cont .recipe .img {
+        width: 300px;
+        height: 260px;
+        float: left;
+        border-radius: 20px; }
+      .browse .browse-cont .recipe .img-1 {
+        background-image: url(../images/recipe-pizza.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .browse .browse-cont .recipe .img-2 {
+        background-image: url(../images/recipe-burger.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .browse .browse-cont .recipe .img-3 {
+        background-image: url(../images/recipe-pilaf.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .browse .browse-cont .recipe .img-4 {
+        background-image: url(../images/recipe-chowmein.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; }
+      .browse .browse-cont .recipe .text-holder {
+        width: 230px;
+        height: 260px;
+        background-color: white;
+        float: right;
+        border-radius: 20px; }
+        .browse .browse-cont .recipe .text-holder h2 {
+          max-width: 180px;
+          height: 27px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          font-size: 18px;
+          margin: 10px auto;
+          border-bottom: 3px black solid;
+          margin-bottom: 15px;
+          font-family: lato-light;
+          text-decoration: none;
+          color: black; }
+        .browse .browse-cont .recipe .text-holder p {
+          width: 170px;
+          min-height: 60px;
+          margin: 0 auto;
+          font-size: 13px;
+          font-family: lato-light;
+          text-decoration: none;
+          color: black; }
+        .browse .browse-cont .recipe .text-holder .time {
+          width: 120px;
+          height: 25px;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          margin-top: 20px;
+          text-decoration: none; }
+          .browse .browse-cont .recipe .text-holder .time .thesvg {
+            float: left;
+            height: 23px;
+            width: 23px;
+            background-image: url(../images/time.svg); }
+          .browse .browse-cont .recipe .text-holder .time .time-text {
+            font-family: lato-light;
+            text-decoration: none; }
+        .browse .browse-cont .recipe .text-holder .servings {
+          width: 120px;
+          height: 25px;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          margin-top: 10px; }
+          .browse .browse-cont .recipe .text-holder .servings .thesvg2 {
+            float: left;
+            height: 23px;
+            width: 23px;
+            background-image: url(../images/servings.svg); }
+          .browse .browse-cont .recipe .text-holder .servings .serving {
+            font-family: lato-light; }
+
+@media only screen and (max-width: 768px) {
+  .browse {
+    height: 135%; }
+    .browse .browse-cont {
+      flex-direction: column;
+      height: 550px; } }
+
+@media only screen and (max-width: 378px) {
+  .browse {
+    height: 205%; }
+    .browse h1 {
+      font-size: 19px;
+      left: 15px;
+      top: 100px; }
+    .browse .browse-cont {
+      flex-direction: column;
+      height: 550px;
+      left: 40px; }
+      .browse .browse-cont .recipe {
+        width: 350px; }
+        .browse .browse-cont .recipe .img {
+          width: 180px;
+          height: 220px; }
+        .browse .browse-cont .recipe .text-holder {
+          width: 160px;
+          height: 220px; }
+          .browse .browse-cont .recipe .text-holder h2 {
+            font-size: 12px; }
+          .browse .browse-cont .recipe .text-holder p {
+            width: 120px;
+            min-height: 60px;
+            font-size: 10px; }
+          .browse .browse-cont .recipe .text-holder .time {
+            margin-top: 10px;
+            width: 120px;
+            height: 25px; }
+            .browse .browse-cont .recipe .text-holder .time .thesvg {
+              width: 12px;
+              height: 12px; }
+            .browse .browse-cont .recipe .text-holder .time .time-text {
+              font-size: 10px; }
+          .browse .browse-cont .recipe .text-holder .servings {
+            margin-top: 3px; }
+            .browse .browse-cont .recipe .text-holder .servings .thesvg2 {
+              width: 12px;
+              height: 12px; }
+            .browse .browse-cont .recipe .text-holder .servings .serving {
+              font-size: 10px; } }
+
+.foods {
+  width: 100%;
+  height: 150%;
+  position: absolute; }
+  .foods .top-half {
+    width: 70%;
+    height: 400px;
+    position: relative;
+    margin-bottom: 45px;
+    top: 110px;
+    left: 90px; }
+    .foods .top-half .img-box {
+      float: left;
+      width: 400px;
+      top: -50px; }
+      .foods .top-half .img-box h1 {
+        font-family: lato-light-italic;
+        position: relative;
+        left: -80px;
+        top: 65px;
+        height: 40px;
+        width: 300px;
+        transform: rotate(-90deg); }
+      .foods .top-half .img-box .food-img {
+        width: 300px;
+        height: 300px;
+        background-color: black;
+        float: right;
+        position: relative;
+        top: -55px; }
+    .foods .top-half .text-cont {
+      width: 400px;
+      height: 300px;
+      float: right; }
+      .foods .top-half .text-cont h2 {
+        font-family: lato-light; }
+      .foods .top-half .text-cont p {
+        font-family: lato-light; }
+      .foods .top-half .text-cont h3 {
+        font-family: lato-light; }
+      .foods .top-half .text-cont p {
+        font-family: lato-light; }
+  .foods .ingredients {
+    width: 75%;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 25px; }
+    .foods .ingredients h2 {
+      font-family: lato-light; }
+    .foods .ingredients p {
+      font-family: lato-light; }
+  .foods .instructions {
+    width: 75%;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 50px; }
+    .foods .instructions h2 {
+      font-family: lato-light; }
+    .foods .instructions p {
+      font-family: lato-light; }
+
+@media only screen and (max-width: 768px) {
+  .foods {
+    height: 140%; }
+    .foods .top-half .text-cont {
+      position: relative;
+      right: 80px;
+      margin-bottom: 80px; }
+    .foods .ingredients {
+      left: 50px; }
+    .foods .instructions {
+      left: -10px;
+      width: 60%; } }
+
+@media only screen and (max-width: 378px) {
+  .foods {
+    height: 225%; }
+    .foods .top-half {
+      left: 0px; }
+      .foods .top-half .img-box {
+        float: left;
+        width: 400px;
+        top: -50px; }
+        .foods .top-half .img-box h1 {
+          top: 15px; }
+        .foods .top-half .img-box .food-img {
+          width: 180px;
+          height: 180px;
+          left: -120px; }
+      .foods .top-half .text-cont {
+        width: 280px;
+        position: relative;
+        left: 80px;
+        margin-bottom: 100px; }
+    .foods .ingredients {
+      left: 14px; } }
